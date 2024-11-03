@@ -74,8 +74,8 @@ btnHold.addEventListener("click", function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
 
-    // 2. Check if player's score is >= 100
-    if (scores[activePlayer] >= 100) {
+    // 2. Check if player's score is >= 30
+    if (scores[activePlayer] >= 30) {
       playing = false;
       diceEl.classList.add("hidden");
       document
@@ -85,7 +85,7 @@ btnHold.addEventListener("click", function () {
         .querySelector(`.player--${activePlayer}`)
         .classList.remove("player--active");
     } else {
-      switchPlayer(); // If score is < 100, switch to the next player.
+      switchPlayer(); // If score is < 30, switch to the next player.
     }
     // finish the game
   }
