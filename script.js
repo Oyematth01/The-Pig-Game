@@ -87,7 +87,6 @@ btnHold.addEventListener("click", function () {
     } else {
       switchPlayer(); // If score is < 30, switch to the next player.
     }
-    // finish the game
   }
 });
 
